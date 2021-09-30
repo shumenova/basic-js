@@ -66,7 +66,7 @@ export default function repeater(/*str, options*/) {
 //           else {
 //             newWord = newWord + str + newWordAdd;
 //           }}
-//       // }
+//        }
         
       
         

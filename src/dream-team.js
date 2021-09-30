@@ -13,7 +13,9 @@ import { NotImplementedError } from '../extensions/index.js';
  * createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
  *
  */
-export default function createDreamTeam(members) {
+export default function createDreamTeam(/*members*/) {
+  throw new NotImplementedError('Not implemented');
+
   let membersTrimed = [];
   let membersNew = '';
 
