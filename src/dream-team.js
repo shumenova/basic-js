@@ -16,29 +16,29 @@ import { NotImplementedError } from '../extensions/index.js';
 export default function createDreamTeam(/*members*/) {
   throw new NotImplementedError('Not implemented');
 
-  let membersTrimed = [];
-  let membersNew = '';
+  // let membersTrimed = [];
+  // let membersNew = '';
 
-  if (members != null) {
-    for(let j = 0; j < members.length; j++){
-      if(typeof members[j] == 'string') {
-        membersNew = members[j].trimStart();
-        membersTrimed.push(membersNew.toUpperCase());
-      }
-   }
+  // if (members != null) {
+  //   for(let j = 0; j < members.length; j++){
+  //     if(typeof members[j] == 'string') {
+  //       membersNew = members[j].trimStart();
+  //       membersTrimed.push(membersNew.toUpperCase());
+  //     }
+  //  }
    
-   membersTrimed.sort();
-   let dreamteam = '';
+  //  membersTrimed.sort();
+  //  let dreamteam = '';
    
-   for(let i = 0; i < members.length; i++) {
-     if (typeof membersTrimed[i] == 'string') {
-       dreamteam += membersTrimed[i].charAt(0).toUpperCase(); 
-     }
+  //  for(let i = 0; i < members.length; i++) {
+  //    if (typeof membersTrimed[i] == 'string') {
+  //      dreamteam += membersTrimed[i].charAt(0).toUpperCase(); 
+  //    }
      
-   }
-   return dreamteam;
+  //  }
+  //  return dreamteam;
 
-  }
-  else return false;
+  // }
+  // else return false;
 
 }

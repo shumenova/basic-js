@@ -19,13 +19,13 @@ const HALF_LIFE_PERIOD = 5730;
  */
 export default function dateSample(/*sampleActivity*/) {
   throw new NotImplementedError('Not implemented');
-  const s = parseFloat(sampleActivity);  
+  // const s = parseFloat(sampleActivity);  
 
-  if ((typeof s === 'number') && (s > 0 && s < 15) && typeof sampleActivity === 'string') {
+  // if ((typeof s === 'number') && (s > 0 && s < 15) && typeof sampleActivity === 'string') {
 
-    return Math.ceil(Math.log(MODERN_ACTIVITY / s) / (0.693 / HALF_LIFE_PERIOD));
+  //   return Math.ceil(Math.log(MODERN_ACTIVITY / s) / (0.693 / HALF_LIFE_PERIOD));
     
-  } else return false;
+  // } else return false;
  
 }
 
