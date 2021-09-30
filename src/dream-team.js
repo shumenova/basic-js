@@ -25,12 +25,12 @@ export default function createDreamTeam(members) {
       }
    }
    
-   console.log(membersTrimed.sort());
+   membersTrimed.sort();
    let dreamteam = '';
    
    for(let i = 0; i < members.length; i++) {
      if (typeof membersTrimed[i] == 'string') {
-       console.log(dreamteam += membersTrimed[i].charAt(0).toUpperCase()); 
+       dreamteam += membersTrimed[i].charAt(0).toUpperCase(); 
      }
      
    }
