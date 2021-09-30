@@ -19,7 +19,7 @@ const HALF_LIFE_PERIOD = 5730;
  */
 export default function dateSample(sampleActivity) {
 
-  const s = parseFloat(sampleActivity);
+  const s = parseFloat(sampleActivity);  
 
   if ((typeof s === 'number') && (s > 0 && s < 15) && typeof sampleActivity === 'string') {
 
