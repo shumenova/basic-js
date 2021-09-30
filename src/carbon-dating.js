@@ -29,4 +29,3 @@ export default function dateSample(sampleActivity) {
  
 }
 
-console.log(dateSample('1'))

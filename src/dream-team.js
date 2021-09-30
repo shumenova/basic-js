@@ -14,16 +14,42 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function createDreamTeam(members) {
-  
-  members.sort()
-  let dreamteam = '';
-  for(let i = 0; i < members.length; i++) {
-    if (typeof members[i] == 'string') {
-       dreamteam += members[i].charAt(0); 
-    }
-    
+  let membersTrimed = [];
+  let membersNew = '';
+
+  if (members != null) {
+    for(let j = 0; j < members.length; j++){
+      if(typeof members[j] == 'string') {
+        membersNew = members[j].trimStart();
+        membersTrimed.push(membersNew.toUpperCase());
+      }
+   }
+   
+   console.log(membersTrimed.sort());
+   let dreamteam = '';
+   
+   for(let i = 0; i < members.length; i++) {
+     if (typeof membersTrimed[i] == 'string') {
+       console.log(dreamteam += membersTrimed[i].charAt(0).toUpperCase()); 
+     }
+     
+   }
+   return dreamteam;
+
   }
-  return dreamteam;
+  else return false;
+
 }
-
-
+createDreamTeam([
+  ['David Abram'],
+  ['Robin Attfield'],
+  'Thomas Berry',
+  ['Paul R.Ehrlich'],
+  'donna Haraway',
+  ' BrIaN_gOodWiN  ',
+  {
+    0: 'Serenella Iovino'
+  },
+  'Erazim Kohak',
+  '  val_plumwood',
+])
